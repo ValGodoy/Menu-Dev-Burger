@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Dev Burger - o melhor hamburger dev!"/>
+    <meta property="" content="Dev Burger - o melhor hamburger dev!"/>
+    
+
     <link rel="stylesheet" href="./styles/output.css" />
     <title>Dev Burger</title>
 </head>
 <body>
-    <!--HEADER-->
+    
     <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
         <div class="w-full h-full flex flex-col justify-center items-center">
             <img src="./assets/logo-burger.jpeg" 
@@ -21,19 +28,17 @@
             class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
             />
             <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Dev Burger</h1>
-            <span class="text-white font-medium">Rua dev 10, Mogi Guaçu - SP</span>
+            <span class="text-white font-medium">Rua Godoy 10, Mogi Guaçu - SP</span>
             <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
                 <span class="text-white font-medium">Seg á Dom - 18:00 ás 23:30</span>
             </div>
             
             </div>
     </header>
-    <!--FIM HEADER-->
 
     <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
         Conheça nosso menu
     </h2>
-    <!--Inicio Menu-->
 
     <div id="menu">
 
@@ -41,11 +46,11 @@
         class= " grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
             <div class="flex gap-2">
             <img src="./assets/hamb-1.png" 
-            alt="Hamburger Smash" 
+            alt="Hamburger Salad" 
             class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
             />
             <div>
-                <p class="font-bold">Hamburger Smash</p>
+                <p class="font-bold">Hamburger Salad</p>
                 <p class="text-sm">Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e 
                    maionese da casa.</p>
 
@@ -61,8 +66,6 @@
                    </div>
             </div>
             </div>
-
-            <!--Inicio Menu-->
 
     <div class="flex gap-2">
             <img src="./assets/hamb-2.png" 
@@ -87,36 +90,28 @@
             </div>
             </div>
 
-    <!--Fim Menu-->
-
-    <!--Inicio Menu-->
-
     <div class="flex gap-2">
             <img src="./assets/hamb-3.png" 
-            alt="Hamburger EGG" 
+            alt="Hamburger Smash Cheddar" 
             class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
             />
             <div>
-                <p class="font-bold">Hamburger EGG</p>
-                <p class="text-sm">Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e 
+                <p class="font-bold">Hamburger Smash Cheddar</p>
+                <p class="text-sm">Pão levinho de fermentação natural da Trigou, burger 180g, queijo cheddar e 
                    maionese da casa.</p>
 
                    <div class="flex items-center gap-2 justify-between mt-3">
-                    <p class="font-bold text-lg ">R$ 35.90</p>
+                    <p class="font-bold text-lg ">R$ 25.90</p>
                     <BUtton
                      class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                     data-name="Hamburger EGG"
-                     data-price="35.90"
+                     data-name="Hamburger Smash Cheddar"
+                     data-price="25.90"
                      >
                      <I class="fa fa-cart-plus text-lg text-white"></I>
                     </BUtton>
                    </div>
             </div>
             </div>
-
-    <!--Fim Menu-->
-
-    <!--Inicio Menu-->
 
     <div class="flex gap-2">
             <img src="./assets/hamb-4.png" 
@@ -141,7 +136,98 @@
             </div>
             </div>
 
-    <!--Fim Menu-->
+            <div class="flex gap-2">
+                <img src="./assets/hamb-5.png" 
+                alt="Hamburger X Dev" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="font-bold">Hamburger X Dev </p>
+                    <p class="text-sm">Pão levinho de fermentação natural da Trigou, burger 180g, queijo prato e 
+                       maionese da casa.</p>
+    
+                       <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg ">R$ 34.90</p>
+                        <BUtton
+                         class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                         data-name="Hamburger X Dev"
+                         data-price="34.90"
+                         >
+                         <I class="fa fa-cart-plus text-lg text-white"></I>
+                        </BUtton>
+                       </div>
+                </div>
+                </div>
+
+                <div class="flex gap-2">
+                    <img src="./assets/hamb-6.png" 
+                    alt="Hamburger X Veg" 
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                    />
+                    <div>
+                        <p class="font-bold">Hamburger X Veg </p>
+                        <p class="text-sm">Pão levinho de fermentação natural da Trigou, burger vegano de cogumelo 180g, queijo veg e 
+                           maionese da casa + fritas.</p>
+        
+                           <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg ">R$ 36.90</p>
+                            <BUtton
+                             class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                             data-name="Hamburger X Veg"
+                             data-price="36.90"
+                             >
+                             <I class="fa fa-cart-plus text-lg text-white"></I>
+                            </BUtton>
+                           </div>
+                    </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <img src="./assets/hamb-7.png" 
+                        alt="Hamburger X Onion" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+                        <div>
+                            <p class="font-bold">Hamburger X Onion </p>
+                            <p class="text-sm">Pão levinho de fermentação natural da Trigou, burger 180g, queijo prato e 
+                               maionese da casa + onion rings.</p>
+            
+                               <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg ">R$ 35</p>
+                                <BUtton
+                                 class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                 data-name="Hamburger X Onion"
+                                 data-price="35"
+                                 >
+                                 <I class="fa fa-cart-plus text-lg text-white"></I>
+                                </BUtton>
+                               </div>
+                        </div>
+                        </div>
+
+                        
+                    <div class="flex gap-2">
+                        <img src="./assets/hamb-8.png" 
+                        alt="Hamburger Dev-Veg" 
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+                        <div>
+                            <p class="font-bold">Hamburger Dev-Veg </p>
+                            <p class="text-sm">Pão levinho de fermentação natural da Trigou, burger vegano de cogumelo 160g, queijo veg e 
+                               maionese da casa.</p>
+            
+                               <div class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg ">R$ 30</p>
+                                <BUtton
+                                 class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                 data-name="Hamburger Dev-Veg"
+                                 data-price="30"
+                                 >
+                                 <I class="fa fa-cart-plus text-lg text-white"></I>
+                                </BUtton>
+                               </div>
+                        </div>
+                        </div>
 
         </main>
 
@@ -176,10 +262,6 @@
         </div>
         </div>
 
-<!--Fim bebida item-->  
-
-<!--bebida item-->
-
 <div class="flex gap-2 w-full">
     <img src="./assets/refri-2.png" 
     alt="Guaraná lata" 
@@ -201,12 +283,12 @@
     </div>
     </div>
 
-<!--Fim bebida item-->  
-        <!--fim grid bebidas-->
     </div>
-    <!--Fim Menu-->
-       
-    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden">
+   
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+    id="cart-modal"
+    >
+
     <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
         <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
 
@@ -242,6 +324,9 @@
             </button>
         </footer>
     </div>
-    <!--Fim Menu-->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
+    <script src="script.js"></script>
 </body>
 </html>
